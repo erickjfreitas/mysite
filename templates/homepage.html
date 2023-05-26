@@ -1,10 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>homepage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+    <style type="text/css">
+        /*O CSS interno está aplicando estilo apenas nos elementos que contém nesta página em especial*/
+        .box-info
+        {
+            display: flex;
+            margin-left: 13%;
+            gap: 4%;
+            user-select: none;
+        }
+        .info
+        {
+            /*background-color: #B7E1E4;*/
+            background-color: lightgrey;
+            /*color: #5DBCC2;*/
+            color: grey;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 4%;
+            margin-top: 12%;
+            min-width: 40%;
+            min-height: 15%;
+            max-width: 40%;
+            max-height: 15%;
+            padding: 1%;
+            border-radius: 14px;
+            box-shadow: 10px 10px 10px #6B6B6B;
+            text-align: center;
+            cursor: context-menu;
+        }
+        /*Início de configuração de cards*/
+        .box-card
+        {
+            display: flex;
+            margin-top: 2%;
+            gap: 4%;
+            text-align: center;
+            margin-left: 13%;
+  
+        }
+        .card
+        {
+            min-width: 17%;
+            max-width: 17%;
+            min-height: 15%;
+            max-height: 15%;
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            border-radius: 14px;
+            box-shadow: 0px 10px 15px #6B6B6B;
+            padding: 1%;
+            cursor: pointer;
+            transition: all 1s;
+            
+        }
+        .card:hover
+        {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1) translateZ(0);
+
+        }
+        .card figure
+        {
+            margin-bottom: 5%;
+        }
+        .card p
+        {
+            font-size: smaller;
+            margin-top: 5%;
+        }
+        /*Fim de configurações de cards*/
+        button
+        {
+            margin-top: 5%;
+            margin-left: 43%;
+            min-width: 17%;
+            max-width: 25%;
+            min-height: 7%;
+            max-height: 8%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: #02c513;
+            outline: none;
+            font-size: 105%;
+            border-style: none;
+            border-radius: 5px;
+            box-shadow: 0px 10px 15px gray;
+            cursor: pointer;
+        }
+        button:hover
+        {
+            background-color: #03d314;
+        }
+    </style>
+    <title>in9Car</title>
 </head>
 <body>
-<p>home</p>
+    <header>
+        <div class="logo">
+            <img src="../static/image/logotipo.png" alt="Logotipo do estacionamento" width="70px" height="70px">
+            <h1>in9Car</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contatos</li>
+                <li>Sobre</li>
+            </ul>
+        </nav>
+        <div class="login">
+            <p>Login</p>
+            <img src="../static/image/login.png" alt="Ícone de login" width="15px" height="15px">
+        </div>
+    </header>
+    <main>
+        <div class="box-info">
+            <div class="info">
+                <p>Na hora de alugar carro, você terá acesso a várias categorias.<br>E, acredite, o veículo que você procura e quer dirigir está na in9Car.</p>
+            </div>
+            <div class="info">
+                <p>Para fazer com que a sua experiência com o aluguel de carros seja a melhor possível, a gente separa os modelos em grupos de veículos..</p>
+            </div>        
+        </div>
+        <div class="box-card">
+            <div class="card">
+                <figure>
+                    <img src="../static/image/preco.png" alt="" width="100px" height="100px">
+                </figure>
+                <h4>Melhor preço</h4>
+                <p>Encontrou uma tarifa menor depois de ter reservado com a in9Car? Nós reembolsamos a diferença!</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="../static/image/pagamento.png" alt="" width="100px" height="100px">
+                </figure>
+                <h4>Pagamento flexível</h4>
+                <p>Alugue um carro parcelando em até 12x no cartão de crédito, via PIX ou boleto. Ainda ganhe Cashback de até 10%!</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="../static/image/documento.png" alt="" width="100px" height="100px">
+                </figure>
+                <h4>Planos</h4>
+                <p>Excelentes planos com ótimas vantagens. Nosso atendimento funciona 7 dias da semana por telefone, chat ou WhatsApp.</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="../static/image/oferta.png" alt="" width="100px" height="100px">
+                </figure>
+                <h4>Aluguel pratico e fácil</h4>
+                <p>Tenha o melhor atendimento e desfrute de promoções exclusivas!</p>
+            </div>
+        </div>
+        <button>Faça sua reserva</button>
+    </main>
+    <footer>
+        <section class="section-footer">
+            <div class="contato">
+                <p>INFORMAÇÕES DE CONTATO</p> <br>
+                <small>in9Car@gmail.com</small>
+           </div>
+           <div class="suporte">
+                <p>DESENVOLVIMENTO E SUPORTE</p> <br>
+                <ul>
+                  <li><small>pimenta.lh2@gmail.com</small></li>
+                   <li><small>+55 84 9999-9999</small></li>
+                   <li><small>CEP. 11110-000</small></li>
+                </ul>     
+           </div>
+           <div class="redes">
+
+           </div>
+        </section>
+        <div class="region-footer">
+            <small>&copy; 2023 in9Car | - Nenhum direito reservado.</small>
+        </div>
+    </footer>
 </body>
 </html>
