@@ -12,7 +12,7 @@
             display: flex;
             font-family: Arial, Helvetica, sans-serif
         }
-        .box-sobre
+        .box-info
         {
             min-height: 85%;
             min-width: 35%;
@@ -20,23 +20,27 @@
             margin-top: 12%;
             padding: 1%;
             border-radius: 14px;
-            margin-left: 23%;
+            margin-left: 33%;
             background-color: white;
             box-shadow: 0px 10px 25px #6B6B6B;
-        }
-        h2
-        {
             text-align: center;
         }
-        figure
+        .number
         {
-            text-align: center;
-            margin-top: 4%;
+            font-weight: bold;
+            color: orange;
         }
-
-        img
+        .location
         {
-            border-radius: 10px;
+            color: gray;
+        }
+        .info
+        {
+            margin-bottom: 2%;
+        }
+        li
+        {
+            list-style: none;
         }
     </style>
     <title>Sobre nós</title>
@@ -61,20 +65,32 @@
     </header>
     <main>
         <div class="container">
-            <div class="box-sobre">
-                <h2>in9Car - Melhor Preço e Melhor Experiência</h2>
+            <div class="box-info">
+                <h2>Atendimento ao cliente</h2>
                 <br>
-                <p>Somos a maior plataforma de aluguel de carros online da América Latina e uma das líderes globais 
-                do<br>segmento. Na in9Car, você pode comparar preços e opções de locação de veículos de centenas 
-                de<br>locadoras. Fundada em 2023, a nossa missão é oferecer as melhores opções de aluguel de carros
-                 em<br>todo mundo. Respiramos excelência no atendimento ao cliente e trabalhamos focados em garantir 
-                 a<br>satisfação do início ao fim da sua viagem. A in9Car garante o melhor preço aos seus clientes. 
-                 Além disso,<br>quem reserva na nossa plataforma pode escolher a forma de pagamento mais adequada para 
-                 o seu bolso:<br>Em até 12X, no boleto e, para quem vai para fora do Brasil, a opção de pagar em reais 
-                 e economizar 5,38% <br> de IOF.</p>
-                <figure>
-                    <img src="../static/image/sobre-img.png" alt="" width="655px" height="350px">
-                </figure>
+                <div class="info">
+                    <p class="number">403-500</p>
+                    <p class="location">Principais capitais</p>
+                </div>
+                <div class="info">
+                    <p class="number">0800-604-853</p>
+                    <p class="location">Demais localidades</p>
+                </div>
+                <div class="info">
+                    <p class="number">+55 (84) 4042-9123 </p>
+                    <p class="location">Ligações internacionais</p>
+                </div>
+                <br>
+                <div class="times">
+                    <p>Confira nossos horários de atendimento:</p>
+                    <br>
+                    <ul>
+                        <li><b>Segunda-Feira</b>- 07:00 ás 00:00</li>
+                        <li><b>Terça a Sexta-Feira</b>- 00:00 ás 23:59</li>
+                        <li><b>Sábado</b>- 07:00 ás 00:00</li>
+                        <li><b>Domingo</b>- 10:00 ás 19:00</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>

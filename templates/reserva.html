@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico/pageicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <style type="text/css">
+        .container
+        {
+            display: flex;
+        }
+        .reserva
+        {
+            min-height: 85%;
+            min-width: 35%;
+            margin-bottom: 4%;
+            margin-top: 15%;
+            padding: 1%;
+            border-radius: 14px;
+            margin-left: 33%;
+            background-color: white;
+            box-shadow: 0px 10px 25px #6B6B6B;
+        }
+        fieldset
+        {
+            border: transparent;
+        }
+        legend
+        {
+            text-align: center;
+            font-size: x-large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        <!---->
+        label
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #data_nascimento, select
+        {
+            border: 1px solid lightgray;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        .box-data, .mb-3
+        {
+            margin-top:7%;
+            margin-left: 20%;
+        }
+
+        #submit{
+            background-color: #1368CA;
+            box-shadow: 0px 10px 15px gray;
+            min-width: 37%;
+            max-width: 25%;
+            min-height: 5%;
+            max-height: 8%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 32%;
+            margin-top: 7%;
+            margin-bottom: 4%;
+        }
+        #submit:hover
+        {
+            background-color: #167DF2;
+        }
+    </style>
+    <title>Faça sua reserva !</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/image/logotipo.png" alt="Logotipo do estacionamento" width="70px" height="70px">
+            <h1>in9Car</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="homepage.html"><li>Home</li></a>
+                <a href="contatos.html"><li>Contatos</li></a>
+                <a href="sobre.html"><li>Sobre</li></a>
+            </ul>
+        </nav>
+        <div class="login">
+            <p>Login</p>
+            <img src="../static/image/login.png" alt="Ícone de login" width="15px" height="15px">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div class="reserva">
+                <fieldset>
+                    <legend><b>Reserva</b></legend>
+                <div class="input-data">
+                    <div class="box-data">
+                        <label for="data_nascimento" class="labelInput">Data de retirada:</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    </div>
+                    <div class="box-data">
+                        <label for="data_nascimento" class="labelInput">Data de devolução:</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Retirar o carro em:</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option>Canguaretama</option>
+                        <option>Goianinha</option>
+                        <option>Natal</option>
+                        <option>Baia Formosa</option>
+                    </select>
+                </div>
+                <input type="submit" name="submit" id="submit" value="Pesquisar">
+                </fieldset>
+            </div>
+        </div>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <section class="section-footer">
+            <div class="contato">
+                <p>INFORMAÇÕES DE CONTATO</p> <br>
+                <small>in9Car@gmail.com</small>
+           </div>
+           <div class="suporte">
+                <p>DESENVOLVIMENTO E SUPORTE</p> <br>
+                <ul>
+                  <li><small>pimenta.lh2@gmail.com</small></li>
+                   <li><small>+55 84 9999-9999</small></li>
+                   <li><small>CEP. 11110-000</small></li>
+                </ul>     
+           </div>
+           <div class="redes">
+
+           </div>
+        </section>
+        <div class="region-footer">
+            <small>&copy; 2023 in9Car | - Nenhum direito reservado.</small>
+        </div>
+    </footer>
+</body>
+</html>
